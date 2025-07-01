@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtPixel</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="draw.css">
+</head>
+
+<body>
+    <div id="container">
+        <img id="logo" src="logo2.png"></img>
+        <div id="tela" class="caixa">
+            <div id="opcoes">
+                <button id="limpar">X</button>
+            </div>
+            <canvas></canvas>
+        </div>
+        <div id="barra-lateral">
+            <div class="caixa">
+                <h1 id="cores-titulo">Cores</h1>
+                <div id="cores">
+                    <input type="color" id="colorPicker" value="#000000">
+                    <label>Clique para selecionar uma cor</label>
+                </div>
+            </div>
+
+            <div class="caixa">
+                <h1 id="lapis-titulo">Lápis</h1>
+                <div id="lapis">
+                   <input type="range" id="espessura" min="1" max="20" value="2">
+                   <label>Selecione a espessura do lápis</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="draw.js"></script>
+</body>
+
+</html>

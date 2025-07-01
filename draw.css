@@ -1,0 +1,149 @@
+/* CORES E FONTES*/
+:root {
+    --main-bg-color: #b165ed;
+    --main-color: #dda9fa;
+    --main-text-color: #30055a;
+}
+
+@font-face {
+    font-family: Railey;
+    src: url(Railey-PersonalUse.ttf);
+}
+
+body {
+    background-color: var(--main-bg-color);
+    overflow: hidden;
+}
+
+/* CONTAINER */
+#container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#barra-lateral {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 6vh;
+    color: var(--main-text-color);
+    width: 30vw;
+    height: 80vh;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: Railey;
+    text-shadow: -5px 2px 5px white;
+    margin: 10px 0;
+}
+
+.caixa {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 50%;
+    border: solid;
+    border-color: var(--main-text-color);
+    border-radius: 25px;
+    box-shadow: -15px 15px var(--main-text-color);
+    background-color: var(--main-color);
+    margin: 10px 0 10px;
+}
+
+#colorPicker {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 5px solid;
+    background-color: var(--main-text-color);
+    border-color: var(--main-text-color);
+}
+
+#cores {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cor {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: white;
+    margin: 8px 8px 8px 8px;
+}
+
+canvas {
+    width: 100%;
+    height: 90%;
+    border-radius: 25px;
+    cursor: crosshair;
+}
+
+#tela {
+    position: fixed;
+    top: 6vh;
+    left: 8vw;
+    width: 60vw;
+    height: 80vh;
+    background-color: white;
+}
+
+#opcoes {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 60vw;
+    height: 10vh;
+    background-color: var(--main-color);
+    border-radius: 23px 23px 0 0;
+    border: solid;
+    border-width: 0 0 3px 0;
+    border-color: var(--main-text-color);
+}
+
+label {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#lapis{
+    display: flex;
+    flex-direction: column;
+}
+
+#limpar {
+    height: 70%;
+    width: 5%;
+    background-color: white;
+    border: 3px solid var(--main-text-color);
+    border-radius: 5px;
+    color: var(--main-text-color);
+    font-weight: bolder;
+    font-size: large;
+    margin-right: 2%;
+    box-shadow: -2px 2px 2px white;
+}
+
+#logo {
+    position: fixed;
+    top: 2vh;
+    left: 2vw;
+    height: 5vh;
+    z-index: 2;
+    color: var(--main-text-color);
+    font-size: 5vh;
+}
+
+#play-pause{
+    color: var(--main-text-color);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
